@@ -4,14 +4,12 @@
     font-size: 16px;
     line-height: 140%;
     background: #1d1d1d;
-
     scroll-behavior: smooth;
-  
-  
+
     &__body {
         margin: 0;
     }
-  
+
     &__menu {
         position: fixed;
         top: 0;
@@ -22,4 +20,3 @@
         pointer-events: none;
     }
 }
-  
