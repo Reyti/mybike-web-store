@@ -2,19 +2,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
-    padding: 24px 20px;
+
+    padding-block: 24px;
+    @include contentPaddingInline;
+
+    @include onTablet {
+        padding-block: 64px;
+    }
 
     &__icons {
         display: flex;
         align-items: center;
         gap: 24px;
     }
-    
+
     &__logo {
         display: flex;
         max-width: 130px;
         height: 38px;
         flex-shrink: 0;
     }
-}  
+}
