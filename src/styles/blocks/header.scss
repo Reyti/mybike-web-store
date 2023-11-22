@@ -4,12 +4,11 @@
     background-image: url(../public/images/header-bg.png);
     background-size: cover;
     background-position: center;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
-  
+
     &__title {
         padding-bottom: 20vh;
         color: #fff;
@@ -21,4 +20,3 @@
         letter-spacing: -1.5px;
     }
 }
-  
