@@ -3,21 +3,20 @@
     height: 100vh;
     background-color: #c2c2c2;
     text-transform: uppercase;
-  
-  
+
     &:target {
         opacity: 1;
         pointer-events: all;
     }
-  
+
     &__content {
-         padding: 24px 20px;
+        @include contentPaddingInline;
     }
-  
+
     &__nav {
         margin-bottom: 40px;
     }
-  
+
     &__phone-number {
         display: block;
         color: #1d1d1d;
@@ -25,13 +24,13 @@
         line-height: 27px;
         text-decoration: none;
     }
-  
+
     &__call-to-order {
         display: block;
         padding: 7px;
         border-bottom: 1px solid #1d1d1d;
         width: fit-content;
-    
+
         color: #1d1d1d;
         font-size: 12px;
         line-height: 16px;
@@ -39,4 +38,3 @@
         letter-spacing: 2px;
     }
 }
-  
