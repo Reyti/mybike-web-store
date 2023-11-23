@@ -20,6 +20,10 @@
         display: flex;
         max-width: 130px;
         height: 38px;
-        flex-shrink: 0;
+
+        @include onTablet {
+            max-width: 187px;
+            height: 56px;
+        }
     }
 }
