@@ -9,6 +9,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include onTablet {
+        margin-bottom: 40px;
+    }
+
     &__title {
         padding-bottom: 20vh;
         color: $main-text-color;
