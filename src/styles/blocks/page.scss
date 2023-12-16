@@ -1,15 +1,17 @@
 .page {
     font-family: "Poppins", sans-serif;
-    color: $main-text-color;
+    color: #fff;
     font-size: 16px;
     line-height: 140%;
     background: #1d1d1d;
+  
     scroll-behavior: smooth;
-
+  
     &__body {
         margin: 0;
+        min-width: 320px;
     }
-
+  
     &__menu {
         position: fixed;
         top: 0;
@@ -17,6 +19,14 @@
         right: 0;
     
         opacity: 0;
+        transition: all 0.3s;
+        transform: translateX(-100%);
         pointer-events: none;
+  
+        &:target {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: all;
+        }
     }
 }
